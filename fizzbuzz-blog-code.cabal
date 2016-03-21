@@ -18,7 +18,11 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     FizzBuzz
+  other-extensions:    MonadComprehensions
   build-depends:       base >=4.8 && <4.9
+                     , primes 
+                     , semigroups
+
   default-language:    Haskell2010
 
 executable fizzbuzz-fib
